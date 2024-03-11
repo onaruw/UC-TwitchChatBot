@@ -12,7 +12,7 @@ options.add_argument(f"user-data-dir={profile}")
 driver = uc.Chrome(options=options, use_subprocess=True)
 
 #username here 
-username = " *** "
+username = " "
 driver.get(f"https://www.twitch.tv/{username}")
 
 time.sleep(5)
