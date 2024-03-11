@@ -27,10 +27,14 @@ time.sleep(2)
 
 textBox = driver.find_element(By.CLASS_NAME, "chat-wysiwyg-input__editor.focus-visible")
 
+#replace 10 with how many times you want to send a message
 for x in range(10):
-
+        #replace 0.1 with how many delay you want (seconds)
         time.sleep(0.1)
+        #replace x with what do you want to write
         textBox.send_keys(x)
         textBox.send_keys(Keys.ENTER)
 
 time.sleep(10)
+
+
